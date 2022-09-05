@@ -955,7 +955,7 @@ main {
 
 .project-img {
   position: relative;
-  width: 100%;
+  width: 150px;
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
