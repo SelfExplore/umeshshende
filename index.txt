@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Umesh Shende
+Umesh Shende
+Software Developer
 
 Show Contacts
 
 Email
-richard@example.com
+umesh.shende19@gmail.com
 
 Phone
-+1 (213) 352-2795
++91 8898734052
 
 Birthday
-June 23, 1982
+June 19,1990
 
 Location
-Sacramento, California, USA
+Roadpali, Kalamboli, India 410218
 
 # navbar
 
