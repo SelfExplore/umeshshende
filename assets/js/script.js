@@ -160,7 +160,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 function load_home(blogname) {
   //document.getElementById("loadblog").innerHTML='<object type="text/html" data="blog.html"></object>';
-
+    console.log('Url generates','https://selfexplore.github.io/umeshshende/blogs/'+blogname+'.html');
   fetch('https://selfexplore.github.io/umeshshende/blogs/'+blogname+'.html')
   .then(response=> response.text())
   .then(text=> document.getElementById('loadblog').innerHTML = text);
