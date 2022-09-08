@@ -1888,3 +1888,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .visible {
   display: block;
 }
+#loadblog{
+  background-color: white;
+  padding: 30px;
+}
