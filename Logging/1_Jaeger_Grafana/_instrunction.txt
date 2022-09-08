@@ -1,0 +1,13 @@
+1) Execute command docker-compose -f docker_jaeger_grafana.yml up
+2) Go to browser run http://localhost:16686/search
+3) If Jaeger UI display Jaeger is running 
+4) Go to browser run http://localhost:3000/
+5) Grafana UI display put admin as username and admin as password and login 
+6) Go to browser run http://localhost:9090/targets?search=
+7) Go to docker_jaeger_grafana.yml edit and add in envoirement 
+7) Verify target metrics url is added as your localhost url eg 192.168.2.90:44318/metrics 
+8) If target Url not added please go to URL https://prometheus.io/download/ download prometheus folder and edit target under prometheus.yml
+	1) Update to localhost url in static_configs -target
+	2) Execute prometheus.exe
+	3) Go to browser run http://localhost:9090/targets?search=
+	4) Verify target metrics url is added as your localhost url eg 192.168.2.90:44318/metrics 
