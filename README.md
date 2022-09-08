@@ -1,2 +1,3 @@
 #  Personal portfolio
-https://selfexplore.github.io/profile/
+Website: https://selfexplore.github.io/umeshshende/
+Github: https://github.com/umeshshende
