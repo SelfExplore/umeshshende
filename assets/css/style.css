@@ -1891,4 +1891,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 #loadblog{
   background-color: white;
   padding: 30px;
+  font-size: 14px;
+
 }
