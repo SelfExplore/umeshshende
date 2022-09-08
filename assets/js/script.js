@@ -6,7 +6,7 @@
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
-
+const isBlog = false;
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -160,7 +160,19 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 function load_home() {
   //document.getElementById("loadblog").innerHTML='<object type="text/html" data="blog.html"></object>';
+
   fetch('https://selfexplore.github.io/umeshshende/blog.html')
   .then(response=> response.text())
   .then(text=> document.getElementById('loadblog').innerHTML = text);
+  var blogposts = document.getElementById("blogposts");
+  var loadblog = document.getElementById("loadblog");
+  blogposts.setAttribute('class', 'hidden');
+  loadblog.setAttribute('class', 'visible');
 }
+function load() {
+  var blogposts = document.getElementById("blogposts");
+  var loadblog = document.getElementById("loadblog");
+  blogposts.setAttribute('class', 'visible');
+  loadblog.setAttribute('class', 'hidden');
+}
+
