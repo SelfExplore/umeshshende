@@ -1,4 +1,4 @@
-li{
+ul li{
     display: list-item;
     list-style: disc;
   }
