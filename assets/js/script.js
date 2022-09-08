@@ -161,7 +161,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 function load_home() {
   //document.getElementById("loadblog").innerHTML='<object type="text/html" data="blog.html"></object>';
 
-  fetch('https://selfexplore.github.io/umeshshende/blog.html')
+  fetch('https://selfexplore.github.io/umeshshende/blogs/advancelogging.html')
   .then(response=> response.text())
   .then(text=> document.getElementById('loadblog').innerHTML = text);
   var blogposts = document.getElementById("blogposts");
