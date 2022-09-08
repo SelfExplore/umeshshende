@@ -16,6 +16,7 @@ img{
     height: 100%;
 
 }
-code{
+
+code em {
     padding-left: 50px;
 }
