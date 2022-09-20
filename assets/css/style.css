@@ -1894,3 +1894,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: 14px;
 
 }
+.contact-section{
+padding:16px;
+}
