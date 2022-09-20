@@ -1,0 +1,49 @@
+<html>
+  <head>
+	<script src='https://www.wowza.com/downloads/rts-sdk/wowza.umd.js'></script>
+  </head>
+  <body>
+	<div>
+		<h1>Publish</h1>
+  	
+		<video autoplay playsinline controls muted id="my-video" width="1280" height="720"></video>
+ 
+		<script>
+			const wowza = window.wowza
+			const streamID = 'da75c25ab9944a7dae4032b1ec73d56d'
+			const tokenID = '429663be9e606c76972ad42a6ebfaf2773a6384ea17bf81083894dedbb97555e'
+		
+			//Define callback for generate new tokens
+			const tokenGenerator = () => wowza.Director.getPublisher({
+				token: tokenID, 
+				streamName: streamID
+			  })
+
+			//Create a new instance
+			const wowzaPublish = new wowza.Publish(streamID, tokenGenerator)
+            
+            //Get User camera and microphone
+            navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(
+                (mediaStream) => {
+                    //Publishing Options
+                    const broadcastOptions = {
+                        mediaStream
+                    }
+
+                    document.getElementById('my-video').srcObject = mediaStream
+
+                    //Start broadcast
+                    try {
+                        wowzaPublish.connect(broadcastOptions)
+                    } catch (e) {
+                        console.log('Connection failed, handle error', e)
+                    }
+                }
+            )
+                        
+		</script>
+
+	</div>
+
+  </body>
+</html>
